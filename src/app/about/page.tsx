@@ -116,7 +116,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
           >
-            Our team brings together expertise across multiple domains, delivering intelligent, reliable, and impactful solutions tailored to each client's needs.
+            Our team brings together expertise across multiple domains, delivering intelligent, reliable, and impactful solutions tailored to each client&apos;s needs.
           </motion.p>
         </div>
       </Section>

@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
 
 const navLinks = [
@@ -72,9 +73,11 @@ export const Navbar = () => {
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="relative w-14 h-14 flex items-center justify-center">
-                <img
+                <Image
                   src="/axispoint-full-logo.svg"
                   alt="AxisPoint Software Pvt. Ltd. Logo"
+                  width={56}
+                  height={56}
                   className="w-full h-full object-contain"
                 />
               </div>

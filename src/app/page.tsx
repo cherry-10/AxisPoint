@@ -131,7 +131,7 @@ export default function Home() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              Let's discuss how AxisPoint can help you achieve your goals with cutting-edge software solutions.
+              Let&apos;s discuss how AxisPoint can help you achieve your goals with cutting-edge software solutions.
             </p>
             <Link
               href="/careers"
