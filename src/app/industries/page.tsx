@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
+import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { FiTrendingUp, FiHeart, FiShoppingCart, FiBook, FiHome, FiCpu, FiTruck, FiBarChart, FiArrowUpRight } from 'react-icons/fi';
@@ -178,6 +179,9 @@ export default function Industries() {
           </div>
         </div>
       </Section>
+
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   );
 }

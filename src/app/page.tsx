@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
+import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 
 
@@ -129,29 +129,8 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* CTA Section */}
-        <Section className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="max-w-2xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              Let&apos;s discuss how AxisPoint can help you achieve your goals with cutting-edge software solutions.
-            </p>
-            <Link
-              href="/careers"
-              className="btn-primary inline-flex items-center justify-center"
-            >
-              Get in Touch
-            </Link>
-          </motion.div>
-        </Section>
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   );
 }

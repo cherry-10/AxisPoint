@@ -2,6 +2,7 @@
 
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
+import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { motion } from 'framer-motion';
@@ -208,6 +209,9 @@ export default function Careers() {
           </p>
         </motion.div>
       </Section>
+
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   );
 }

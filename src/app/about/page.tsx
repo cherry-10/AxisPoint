@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
+import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
-import { FiZap, FiTarget, FiCheckCircle, FiHeart, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiZap, FiTarget, FiCheckCircle, FiHeart } from 'react-icons/fi';
 
 const coreValues = [
   {
@@ -298,68 +299,7 @@ export default function About() {
       </Section>
 
       {/* Contact Section */}
-      <Section
-        title="Get In Touch"
-        subtitle="Reach out to us for any inquiries"
-        className="bg-gray-50 dark:bg-gray-800/50"
-      >
-        <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center"
-          >
-            <div className="flex justify-center mb-4">
-              <FiMapPin className="text-primary dark:text-primary-dark" size={32} />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-              Locations
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              Vijayawada, Hyderabad, Mumbai, Pune, Bangalore
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-center"
-          >
-            <div className="flex justify-center mb-4">
-              <FiMail className="text-primary dark:text-primary-dark" size={32} />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-              Email
-            </h3>
-            <div className="text-gray-600 dark:text-gray-300 text-sm space-y-1">
-              <p>hr@axispoint-software.com</p>
-              <p>info@axispoint-software.com</p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-center"
-          >
-            <div className="flex justify-center mb-4">
-              <FiPhone className="text-primary dark:text-primary-dark" size={32} />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-              Phone
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              040-32665081
-            </p>
-          </motion.div>
-        </div>
-      </Section>
+      <ContactSection />
     </main>
   );
 }

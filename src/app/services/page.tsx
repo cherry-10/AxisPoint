@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
+import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { FiCode, FiCpu, FiCloud, FiBarChart } from 'react-icons/fi';
@@ -343,6 +344,9 @@ export default function Services() {
           </div>
         </div>
       </Section>
+
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   );
 }
