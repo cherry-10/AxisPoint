@@ -3,9 +3,10 @@
 import { motion } from 'framer-motion';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
+import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
-import { FiZap, FiTarget, FiCheckCircle, FiHeart, FiCode, FiCompass, FiAward, FiTrendingUp, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiZap, FiTarget, FiCheckCircle, FiHeart, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 const coreValues = [
   {
@@ -95,31 +96,21 @@ export default function About() {
       </HeroInfoSection>
 
       {/* Who We Are Section */}
-      <Section
+      <SplitContentSection
         title="Who We Are"
-        className="bg-gray-50 dark:bg-gray-800/50"
+        description="AxisPoint Software PVT LTD is a technology-driven company specializing in software development, IT consulting, and professional training solutions. We help businesses modernize, innovate, and scale through high-quality digital products and future-ready technology services."
+        image="/images/content/team-collaboration.svg"
+        imageAlt="Team Collaboration"
+        imagePosition="right"
       >
-        <div className="max-w-3xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
-          >
-            AxisPoint Software PVT LTD is a technology-driven company specializing in software development, IT consulting, and professional training solutions. We help businesses modernize, innovate, and scale through high-quality digital products and future-ready technology services.
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-          >
-            Our team brings together expertise across multiple domains, delivering intelligent, reliable, and impactful solutions tailored to each client&apos;s needs.
-          </motion.p>
-        </div>
-      </Section>
+        <ContentList items={[
+          'Expert team with diverse technical backgrounds',
+          'Proven track record across multiple industries',
+          'Client-focused approach to solution delivery',
+          'Commitment to quality and innovation',
+          'Long-term partnership mindset'
+        ]} />
+      </SplitContentSection>
 
       {/* Mission & Vision Section */}
       <Section
@@ -182,92 +173,57 @@ export default function About() {
       </Section>
 
       {/* What We Do Section */}
-      <Section
-        title="What We Do"
-        subtitle="End-to-end technology services tailored to your needs"
+      <SplitContentSection
+        title="Comprehensive Software Development Services"
+        description="From concept to deployment, we deliver end-to-end software solutions that drive business growth. Our full-stack development expertise covers web, mobile, and enterprise applications built with modern technologies and best practices."
+        image="/images/content/software-development.svg"
+        imageAlt="Software Development"
+        imagePosition="left"
+        backgroundColor="bg-gray-50 dark:bg-gray-900"
       >
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md"
-          >
-            <div className="flex items-start">
-              <FiCode className="text-primary dark:text-primary-dark mt-1 mr-4 flex-shrink-0" size={24} />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Software Development
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Building modern, scalable, and secure applications—from concept to deployment.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+        <ContentList items={[
+          'Custom web and mobile application development',
+          'Enterprise software and SaaS platforms',
+          'Legacy system modernization',
+          'API development and third-party integrations',
+          'Quality assurance and testing'
+        ]} />
+      </SplitContentSection>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md"
-          >
-            <div className="flex items-start">
-              <FiCompass className="text-primary dark:text-primary-dark mt-1 mr-4 flex-shrink-0" size={24} />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  IT Consulting
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Guiding businesses through digital transformation with strategic planning, architecture, and technology advisory.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+      {/* IT Consulting Section */}
+      <SplitContentSection
+        title="Strategic IT Consulting & Advisory"
+        description="Navigate complex technology decisions with confidence. Our consulting services help you align technology investments with business objectives, optimize IT infrastructure, and accelerate digital transformation initiatives."
+        image="/images/content/consulting-strategy.svg"
+        imageAlt="IT Consulting"
+        imagePosition="right"
+      >
+        <ContentList items={[
+          'Digital transformation roadmaps',
+          'Technology stack evaluation and selection',
+          'Architecture design and review',
+          'Process optimization and automation',
+          'Vendor selection and management'
+        ]} />
+      </SplitContentSection>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md"
-          >
-            <div className="flex items-start">
-              <FiAward className="text-primary dark:text-primary-dark mt-1 mr-4 flex-shrink-0" size={24} />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Corporate & Technical Training
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Offering hands-on training programs in software development, data analytics, cloud technologies, and next-generation skills.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md"
-          >
-            <div className="flex items-start">
-              <FiTrendingUp className="text-primary dark:text-primary-dark mt-1 mr-4 flex-shrink-0" size={24} />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Product Development Support
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Helping startups and enterprises build, launch, and scale digital products quickly and efficiently.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </Section>
+      {/* Innovation Section */}
+      <SplitContentSection
+        title="Innovation & Continuous Learning"
+        description="Stay ahead of the curve with our training programs and innovation initiatives. We offer corporate training, technical workshops, and mentorship programs designed to upskill your team and foster a culture of continuous improvement."
+        image="/images/content/innovation-lab.svg"
+        imageAlt="Innovation Lab"
+        imagePosition="left"
+        backgroundColor="bg-gray-50 dark:bg-gray-900"
+      >
+        <ContentList items={[
+          'Corporate training programs',
+          'Technical workshops and bootcamps',
+          'Mentorship and career development',
+          'Innovation labs and proof-of-concepts',
+          'Technology trend analysis'
+        ]} />
+      </SplitContentSection>
 
       {/* Core Values Section */}
       <Section

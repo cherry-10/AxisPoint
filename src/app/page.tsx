@@ -4,32 +4,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
+import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
 import { Section } from '@/components/Section';
-import { Card, CardGrid } from '@/components/Card';
-import { FiCode, FiTrendingUp, FiCloud, FiUsers } from 'react-icons/fi';
 
-const features = [
-  {
-    icon: <FiCode size={24} />,
-    title: 'Custom Development',
-    description: 'Tailored software solutions built to your exact specifications.',
-  },
-  {
-    icon: <FiTrendingUp size={24} />,
-    title: 'Scalable Solutions',
-    description: 'Applications designed to grow with your business needs.',
-  },
-  {
-    icon: <FiCloud size={24} />,
-    title: 'Cloud Ready',
-    description: 'Modern cloud-native architecture for reliability and performance.',
-  },
-  {
-    icon: <FiUsers size={24} />,
-    title: 'Expert Team',
-    description: 'Experienced developers committed to your success.',
-  },
-];
 
 const stats = [
   { number: '50+', label: 'Projects Delivered' },
@@ -79,23 +56,57 @@ export default function Home() {
         />
       </HeroInfoSection>
 
-        {/* Features Section */}
-        <Section
-          title="Why Choose AxisPoint"
-          subtitle="We combine technical excellence with business acumen to deliver solutions that matter."
-        >
-          <CardGrid>
-            {features.map((feature, index) => (
-              <Card
-                key={index}
-                icon={feature.icon}
-                title={feature.title}
-                description={feature.description}
-                delay={index}
-              />
-            ))}
-          </CardGrid>
-        </Section>
+      {/* Digital Transformation Section */}
+      <SplitContentSection
+        title="Digital Transformation for Modern Businesses"
+        description="We help organizations navigate the complexities of digital transformation with strategic planning, cutting-edge technology, and proven methodologies. Our approach ensures seamless integration of new systems while maintaining business continuity."
+        image="/images/content/digital-transformation.svg"
+        imageAlt="Digital Transformation"
+        imagePosition="right"
+      >
+        <ContentList items={[
+          'Strategic roadmap development and execution',
+          'Legacy system modernization and migration',
+          'Cloud-native architecture design',
+          'Process automation and optimization',
+          'Change management and training'
+        ]} />
+      </SplitContentSection>
+
+      {/* Software Development Section */}
+      <SplitContentSection
+        title="Custom Software Development Excellence"
+        description="From concept to deployment, we build scalable, secure, and high-performance software solutions tailored to your unique business requirements. Our agile development process ensures rapid delivery without compromising quality."
+        image="/images/content/software-development.svg"
+        imageAlt="Software Development"
+        imagePosition="left"
+        backgroundColor="bg-gray-50 dark:bg-gray-900"
+      >
+        <ContentList items={[
+          'Full-stack web and mobile applications',
+          'Enterprise software solutions',
+          'API development and integration',
+          'Microservices architecture',
+          'DevOps and CI/CD implementation'
+        ]} />
+      </SplitContentSection>
+
+      {/* Team Collaboration Section */}
+      <SplitContentSection
+        title="Collaborative Approach to Success"
+        description="Our team works as an extension of yours, bringing together diverse expertise and perspectives to solve complex challenges. We believe in transparent communication, agile methodologies, and delivering measurable results."
+        image="/images/content/team-collaboration.svg"
+        imageAlt="Team Collaboration"
+        imagePosition="right"
+      >
+        <ContentList items={[
+          'Dedicated project teams and account managers',
+          'Regular progress updates and demos',
+          'Flexible engagement models',
+          'Knowledge transfer and documentation',
+          'Post-launch support and maintenance'
+        ]} />
+      </SplitContentSection>
 
         {/* Stats Section */}
         <Section className="bg-gradient-to-r from-primary/5 to-secondary/5 dark:from-primary-dark/10 dark:to-secondary-dark/10">
