@@ -1,0 +1,34 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="database-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Database cylinder -->
+  <ellipse cx="40" cy="25" rx="18" ry="8" fill="url(#database-grad)" opacity="0.3"/>
+  <ellipse cx="40" cy="25" rx="18" ry="8" fill="none" stroke="url(#database-grad)" stroke-width="2.5"/>
+  
+  <!-- Cylinder body -->
+  <rect x="22" y="25" width="36" height="30" fill="url(#database-grad)" opacity="0.2"/>
+  <line x1="22" y1="25" x2="22" y2="55" stroke="url(#database-grad)" stroke-width="2.5"/>
+  <line x1="58" y1="25" x2="58" y2="55" stroke="url(#database-grad)" stroke-width="2.5"/>
+  
+  <!-- Database layers -->
+  <ellipse cx="40" cy="35" rx="18" ry="8" fill="none" stroke="url(#database-grad)" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="40" cy="45" rx="18" ry="8" fill="none" stroke="url(#database-grad)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Bottom -->
+  <ellipse cx="40" cy="55" rx="18" ry="8" fill="url(#database-grad)" opacity="0.3"/>
+  <ellipse cx="40" cy="55" rx="18" ry="8" fill="none" stroke="url(#database-grad)" stroke-width="2.5"/>
+  
+  <!-- Data symbols -->
+  <circle cx="35" cy="30" r="1.5" fill="url(#database-grad)"/>
+  <circle cx="40" cy="30" r="1.5" fill="url(#database-grad)"/>
+  <circle cx="45" cy="30" r="1.5" fill="url(#database-grad)"/>
+  
+  <!-- Connection arrows -->
+  <path d="M 60 40 L 68 40 M 65 37 L 68 40 L 65 43" 
+        stroke="url(#database-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+</svg>

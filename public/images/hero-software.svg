@@ -1,0 +1,156 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Isometric Software Development Scene -->
+  <defs>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pink-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DB2777;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Gradient Circle -->
+  <circle cx="300" cy="320" r="250" fill="url(#blue-grad)" opacity="0.08"/>
+  
+  <!-- Isometric Dashboard/Monitor (Main Element) -->
+  <g transform="translate(300, 200)" filter="url(#shadow)">
+    <!-- Monitor Stand -->
+    <path d="M -10 150 L -10 180 L 10 180 L 10 150 Z" fill="url(#blue-grad)" opacity="0.8"/>
+    <ellipse cx="0" cy="180" rx="40" ry="8" fill="url(#blue-grad)" opacity="0.6"/>
+    
+    <!-- Monitor Screen -->
+    <path d="M -150 -50 L 150 -50 L 150 150 L -150 150 Z" fill="url(#blue-grad)" opacity="0.9"/>
+    <path d="M -140 -40 L 140 -40 L 140 140 L -140 140 Z" fill="#0F172A"/>
+    
+    <!-- Screen Content - Code Editor -->
+    <g opacity="0.9">
+      <!-- Line numbers -->
+      <rect x="-135" y="-30" width="20" height="160" fill="#1E293B"/>
+      <text x="-125" y="-15" font-family="monospace" font-size="10" fill="#64748B">1</text>
+      <text x="-125" y="0" font-family="monospace" font-size="10" fill="#64748B">2</text>
+      <text x="-125" y="15" font-family="monospace" font-size="10" fill="#64748B">3</text>
+      <text x="-125" y="30" font-family="monospace" font-size="10" fill="#64748B">4</text>
+      <text x="-125" y="45" font-family="monospace" font-size="10" fill="#64748B">5</text>
+      
+      <!-- Code lines -->
+      <rect x="-110" y="-25" width="60" height="4" rx="2" fill="#3B82F6"/>
+      <rect x="-110" y="-10" width="100" height="4" rx="2" fill="#06B6D4"/>
+      <rect x="-110" y="5" width="80" height="4" rx="2" fill="#8B5CF6"/>
+      <rect x="-110" y="20" width="120" height="4" rx="2" fill="#3B82F6"/>
+      <rect x="-110" y="35" width="90" height="4" rx="2" fill="#EC4899"/>
+      <rect x="-110" y="50" width="110" height="4" rx="2" fill="#06B6D4"/>
+      
+      <!-- Charts/Analytics -->
+      <g transform="translate(-80, 80)">
+        <rect x="0" y="30" width="8" height="30" rx="2" fill="#3B82F6" opacity="0.8"/>
+        <rect x="15" y="20" width="8" height="40" rx="2" fill="#06B6D4" opacity="0.8"/>
+        <rect x="30" y="10" width="8" height="50" rx="2" fill="#8B5CF6" opacity="0.8"/>
+        <rect x="45" y="25" width="8" height="35" rx="2" fill="#EC4899" opacity="0.8"/>
+      </g>
+      
+      <!-- Status Indicators -->
+      <circle cx="100" cy="80" r="6" fill="#10B981"/>
+      <circle cx="100" cy="95" r="6" fill="#3B82F6"/>
+      <circle cx="100" cy="110" r="6" fill="#F59E0B"/>
+    </g>
+  </g>
+  
+  <!-- Floating Code Blocks (Left) -->
+  <g transform="translate(80, 150)" filter="url(#shadow)">
+    <rect x="0" y="0" width="100" height="80" rx="8" fill="url(#purple-grad)" opacity="0.85"/>
+    <rect x="8" y="8" width="84" height="64" rx="4" fill="#1E293B"/>
+    <line x1="15" y1="20" x2="50" y2="20" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="30" x2="70" y2="30" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="40" x2="55" y2="40" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="50" x2="65" y2="50" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="60" x2="45" y2="60" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Floating Dashboard Widget (Right) -->
+  <g transform="translate(420, 180)" filter="url(#shadow)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="url(#cyan-grad)" opacity="0.85"/>
+    <rect x="8" y="8" width="104" height="84" rx="4" fill="#0F172A"/>
+    
+    <!-- Pie Chart -->
+    <circle cx="40" cy="50" r="25" fill="none" stroke="#3B82F6" stroke-width="8" stroke-dasharray="50 100"/>
+    <circle cx="40" cy="50" r="25" fill="none" stroke="#06B6D4" stroke-width="8" stroke-dasharray="30 100" stroke-dashoffset="-50"/>
+    <circle cx="40" cy="50" r="25" fill="none" stroke="#8B5CF6" stroke-width="8" stroke-dasharray="20 100" stroke-dashoffset="-80"/>
+    
+    <!-- Stats -->
+    <rect x="75" y="20" width="30" height="4" rx="2" fill="#3B82F6"/>
+    <rect x="75" y="35" width="25" height="4" rx="2" fill="#06B6D4"/>
+    <rect x="75" y="50" width="28" height="4" rx="2" fill="#8B5CF6"/>
+    <rect x="75" y="65" width="32" height="4" rx="2" fill="#EC4899"/>
+  </g>
+  
+  <!-- Server/Cloud Infrastructure (Bottom) -->
+  <g transform="translate(200, 450)" filter="url(#shadow)">
+    <!-- Server Rack -->
+    <rect x="0" y="0" width="80" height="100" rx="6" fill="url(#blue-grad)" opacity="0.85"/>
+    <rect x="5" y="5" width="70" height="90" rx="4" fill="#1E293B"/>
+    
+    <!-- Server Lights -->
+    <circle cx="15" cy="20" r="3" fill="#10B981"/>
+    <circle cx="25" cy="20" r="3" fill="#10B981"/>
+    <circle cx="35" cy="20" r="3" fill="#3B82F6"/>
+    
+    <circle cx="15" cy="40" r="3" fill="#10B981"/>
+    <circle cx="25" cy="40" r="3" fill="#10B981"/>
+    <circle cx="35" cy="40" r="3" fill="#10B981"/>
+    
+    <circle cx="15" cy="60" r="3" fill="#3B82F6"/>
+    <circle cx="25" cy="60" r="3" fill="#10B981"/>
+    <circle cx="35" cy="60" r="3" fill="#10B981"/>
+    
+    <circle cx="15" cy="80" r="3" fill="#10B981"/>
+    <circle cx="25" cy="80" r="3" fill="#F59E0B"/>
+    <circle cx="35" cy="80" r="3" fill="#10B981"/>
+    
+    <!-- Server Slots -->
+    <rect x="45" y="15" width="25" height="10" rx="2" fill="#334155"/>
+    <rect x="45" y="35" width="25" height="10" rx="2" fill="#334155"/>
+    <rect x="45" y="55" width="25" height="10" rx="2" fill="#334155"/>
+    <rect x="45" y="75" width="25" height="10" rx="2" fill="#334155"/>
+  </g>
+  
+  <!-- Cloud Connection -->
+  <g transform="translate(350, 480)">
+    <ellipse cx="0" cy="0" rx="50" ry="30" fill="url(#cyan-grad)" opacity="0.6"/>
+    <ellipse cx="-25" cy="-8" rx="35" ry="22" fill="url(#cyan-grad)" opacity="0.7"/>
+    <ellipse cx="25" cy="-8" rx="35" ry="22" fill="url(#cyan-grad)" opacity="0.7"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g opacity="0.4" stroke-dasharray="5,5">
+    <line x1="240" y1="500" x2="300" y2="350" stroke="#06B6D4" stroke-width="2"/>
+    <line x1="380" y1="490" x2="420" y2="280" stroke="#3B82F6" stroke-width="2"/>
+  </g>
+  
+  <!-- Floating Particles -->
+  <g opacity="0.6">
+    <circle cx="150" cy="350" r="4" fill="#3B82F6"/>
+    <circle cx="450" cy="380" r="3" fill="#06B6D4"/>
+    <circle cx="520" cy="320" r="5" fill="#8B5CF6"/>
+    <circle cx="100" cy="280" r="4" fill="#EC4899"/>
+    <circle cx="380" cy="120" r="3" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Geometric Accents -->
+  <g opacity="0.2">
+    <rect x="50" y="400" width="40" height="40" rx="6" fill="url(#purple-grad)" transform="rotate(-15 70 420)"/>
+    <rect x="510" y="250" width="35" height="35" rx="6" fill="url(#pink-grad)" transform="rotate(20 527 267)"/>
+  </g>
+</svg>

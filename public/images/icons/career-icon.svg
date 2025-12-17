@@ -1,0 +1,34 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="career-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Staircase/ladder to success -->
+  <rect x="20" y="55" width="15" height="8" fill="url(#career-grad)" opacity="0.4" stroke="url(#career-grad)" stroke-width="2"/>
+  <rect x="30" y="45" width="15" height="8" fill="url(#career-grad)" opacity="0.5" stroke="url(#career-grad)" stroke-width="2"/>
+  <rect x="40" y="35" width="15" height="8" fill="url(#career-grad)" opacity="0.6" stroke="url(#career-grad)" stroke-width="2"/>
+  <rect x="50" y="25" width="15" height="8" fill="url(#career-grad)" opacity="0.7" stroke="url(#career-grad)" stroke-width="2"/>
+  
+  <!-- Person climbing -->
+  <circle cx="58" cy="20" r="4" fill="url(#career-grad)"/>
+  <line x1="58" y1="24" x2="58" y2="30" stroke="url(#career-grad)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="58" y1="26" x2="54" y2="29" stroke="url(#career-grad)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="58" y1="26" x2="62" y2="29" stroke="url(#career-grad)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Trophy/goal at top -->
+  <path d="M 55 10 L 55 8 L 61 8 L 61 10 L 60 12 L 56 12 Z" 
+        fill="url(#career-grad)" stroke="url(#career-grad)" stroke-width="1.5"/>
+  <rect x="56.5" y="12" width="3" height="2" fill="url(#career-grad)"/>
+  <rect x="55.5" y="14" width="5" height="1" fill="url(#career-grad)"/>
+  
+  <!-- Base line -->
+  <line x1="15" y1="68" x2="70" y2="68" stroke="url(#career-grad)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Progress dots -->
+  <circle cx="25" cy="68" r="2" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="40" cy="68" r="2" fill="#EF4444" opacity="0.6"/>
+  <circle cx="55" cy="68" r="2" fill="#F59E0B" opacity="0.6"/>
+</svg>
