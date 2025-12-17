@@ -63,8 +63,8 @@ export default function About() {
         title="About AxisPoint Software PVT LTD"
         subtitle="Delivering modern software solutions with innovation and reliability."
         primaryCta={{ text: 'View Services', href: '/services' }}
-        secondaryCta={{ text: 'Contact Us', href: '/careers' }}
-        heroImage="/images/hero-tech.svg"
+        secondaryCta={{ text: 'Contact Us', href: '/contact' }}
+        heroImage="/images/hero-about.svg"
         showHeroImage={true}
       />
 

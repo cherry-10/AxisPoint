@@ -2,7 +2,6 @@
 
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
-import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { motion } from 'framer-motion';
@@ -69,7 +68,7 @@ export default function Careers() {
         title="Careers at AxisPoint Software PVT LTD"
         subtitle="Grow Your Career With AxisPoint. At AxisPoint Software PVT LTD, we believe that innovation begins with people. We are committed to building a dynamic team of learners, problem-solvers, and technology enthusiasts who are passionate about creating meaningful digital solutions."
         primaryCta={{ text: 'View Opportunities', href: '#opportunities' }}
-        heroImage="/images/hero-innovation.svg"
+        heroImage="/images/hero-careers.svg"
         showHeroImage={true}
       />
 
@@ -209,9 +208,6 @@ export default function Careers() {
           </p>
         </motion.div>
       </Section>
-
-      {/* Contact Section */}
-      <ContactSection />
     </main>
   );
 }

@@ -1,6 +1,5 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
-import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { FiTrendingUp, FiHeart, FiShoppingCart, FiBook, FiHome, FiCpu, FiTruck, FiBarChart, FiArrowUpRight } from 'react-icons/fi';
@@ -74,8 +73,10 @@ export default function Industries() {
       {/* Hero Section */}
       <HeroSection
         title="Industries We Serve"
-        subtitle="Domain-focused solutions for modern businesses. We bring deep industry expertise and technical excellence to every project."
-        heroImage="/images/hero-software.svg"
+        subtitle="Delivering tailored software solutions across diverse sectors with deep domain expertise."
+        primaryCta={{ text: 'Explore Solutions', href: '/services' }}
+        secondaryCta={{ text: 'Contact Us', href: '/contact' }}
+        heroImage="/images/hero-industries.svg"
         showHeroImage={true}
       />
 
@@ -179,9 +180,6 @@ export default function Industries() {
           </div>
         </div>
       </Section>
-
-      {/* Contact Section */}
-      <ContactSection />
     </main>
   );
 }

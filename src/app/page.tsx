@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
-import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 
 
@@ -128,9 +127,6 @@ export default function Home() {
             ))}
           </div>
         </Section>
-
-      {/* Contact Section */}
-      <ContactSection />
     </main>
   );
 }

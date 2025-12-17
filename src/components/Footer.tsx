@@ -12,7 +12,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    url: 'mailto:contact@axispoint.tech',
+    url: 'mailto:info@axispoint-software.com',
     icon: <FiMail size={20} />,
   },
 ];

@@ -15,19 +15,25 @@ const contactDetails: ContactInfo[] = [
   {
     icon: <FiMail size={24} />,
     label: 'Email',
-    value: 'contact@axispoint.com',
-    href: 'mailto:contact@axispoint.com',
+    value: 'hr@axispoint-software.com',
+    href: 'mailto:hr@axispoint-software.com',
+  },
+  {
+    icon: <FiMail size={24} />,
+    label: 'Info Email',
+    value: 'info@axispoint-software.com',
+    href: 'mailto:info@axispoint-software.com',
   },
   {
     icon: <FiPhone size={24} />,
     label: 'Phone',
-    value: '+91 (XXX) XXX-XXXX',
-    href: 'tel:+91XXXXXXXXXX',
+    value: '040-32665081',
+    href: 'tel:04032665081',
   },
   {
     icon: <FiMapPin size={24} />,
-    label: 'Location',
-    value: 'India',
+    label: 'Locations',
+    value: 'Bangalore, Hyderabad, Vijayawada, Pune, Noida',
   },
 ];
 

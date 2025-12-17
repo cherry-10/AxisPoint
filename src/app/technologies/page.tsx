@@ -2,7 +2,6 @@
 
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
-import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { motion } from 'framer-motion';
 
@@ -250,9 +249,6 @@ export default function Technologies() {
           </motion.div>
         </motion.div>
       </Section>
-
-      {/* Contact Section */}
-      <ContactSection />
     </main>
   );
 }

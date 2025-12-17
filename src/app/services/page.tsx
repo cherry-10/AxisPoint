@@ -1,6 +1,5 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
-import { ContactSection } from '@/components/ContactSection';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
 import { FiCode, FiCpu, FiCloud, FiBarChart } from 'react-icons/fi';
@@ -131,8 +130,10 @@ export default function Services() {
       {/* Hero Section */}
       <HeroSection
         title="Our Services"
-        subtitle="End-to-end software solutions tailored to your business needs. We create web applications and apps for government and private sectors with innovative, scalable, and reliable solutions that drive growth."
-        heroImage="/images/hero-software.svg"
+        subtitle="Comprehensive software development and IT solutions tailored to your business needs."
+        primaryCta={{ text: 'Get Started', href: '/contact' }}
+        secondaryCta={{ text: 'Learn More', href: '/about' }}
+        heroImage="/images/hero-services.svg"
         showHeroImage={true}
       />
 
@@ -344,9 +345,6 @@ export default function Services() {
           </div>
         </div>
       </Section>
-
-      {/* Contact Section */}
-      <ContactSection />
     </main>
   );
 }
