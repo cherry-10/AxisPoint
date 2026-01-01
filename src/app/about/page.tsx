@@ -64,8 +64,9 @@ export default function About() {
         subtitle="Delivering modern software solutions with innovation and reliability."
         primaryCta={{ text: 'View Services', href: '/services' }}
         secondaryCta={{ text: 'Contact Us', href: '/contact' }}
-        heroImage="/images/hero-about.svg"
+        heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80"
         showHeroImage={true}
+        isRealPhoto={true}
       />
 
       {/* Hero-Down Info Section */}
@@ -100,7 +101,7 @@ export default function About() {
       <SplitContentSection
         title="Who We Are"
         description="AxisPoint Software PVT LTD is a technology-driven company specializing in software development, IT consulting, and professional training solutions. We help businesses modernize, innovate, and scale through high-quality digital products and future-ready technology services."
-        image="/images/content/team-collaboration.svg"
+        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
         imageAlt="Team Collaboration"
         imagePosition="right"
       >
@@ -177,7 +178,7 @@ export default function About() {
       <SplitContentSection
         title="Comprehensive Software Development Services"
         description="From concept to deployment, we deliver end-to-end software solutions that drive business growth. Our full-stack development expertise covers web, mobile, and enterprise applications built with modern technologies and best practices."
-        image="/images/content/software-development.svg"
+        image="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80"
         imageAlt="Software Development"
         imagePosition="left"
         backgroundColor="bg-gray-50 dark:bg-gray-900"
@@ -195,7 +196,7 @@ export default function About() {
       <SplitContentSection
         title="Strategic IT Consulting & Advisory"
         description="Navigate complex technology decisions with confidence. Our consulting services help you align technology investments with business objectives, optimize IT infrastructure, and accelerate digital transformation initiatives."
-        image="/images/content/consulting-strategy.svg"
+        image="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80"
         imageAlt="IT Consulting"
         imagePosition="right"
       >
@@ -212,7 +213,7 @@ export default function About() {
       <SplitContentSection
         title="Innovation & Continuous Learning"
         description="Stay ahead of the curve with our training programs and innovation initiatives. We offer corporate training, technical workshops, and mentorship programs designed to upskill your team and foster a culture of continuous improvement."
-        image="/images/content/innovation-lab.svg"
+        image="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80"
         imageAlt="Innovation Lab"
         imagePosition="left"
         backgroundColor="bg-gray-50 dark:bg-gray-900"
@@ -253,47 +254,44 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <motion.ul
             className="space-y-4"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ staggerChildren: 0.1, delayChildren: 0 }}
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: { staggerChildren: 0.08 },
+              },
+            }}
           >
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">Strong technical expertise in modern technologies</span>
-            </li>
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">End-to-end service delivery: consulting, development, deployment, and training</span>
-            </li>
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">Industry-focused solutions across multiple domains</span>
-            </li>
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">Scalable, secure, and future-ready architectures</span>
-            </li>
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">Transparent communication and reliable delivery</span>
-            </li>
-            <li className="flex items-start">
-              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
-                <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
-              </span>
-              <span className="text-gray-600 dark:text-gray-300">Commitment to long-term partnerships</span>
-            </li>
+            {[
+              "Strong technical expertise in modern technologies",
+              "End-to-end service delivery: consulting, development, deployment, and training",
+              "Industry-focused solutions across multiple domains",
+              "Scalable, secure, and future-ready architectures",
+              "Transparent communication and reliable delivery",
+              "Commitment to long-term partnerships"
+            ].map((item, index) => (
+              <motion.li
+                key={index}
+                className="flex items-start"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.4, ease: 'easeOut' },
+                  },
+                }}
+              >
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 dark:bg-primary-dark/20 flex items-center justify-center mr-4 mt-1">
+                  <span className="w-2 h-2 rounded-full bg-primary dark:bg-primary-dark" />
+                </span>
+                <span className="text-gray-600 dark:text-gray-300">{item}</span>
+              </motion.li>
+            ))}
           </motion.ul>
         </div>
       </Section>

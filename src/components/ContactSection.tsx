@@ -102,7 +102,7 @@ export const ContactSection = () => {
                   {contact.href ? (
                     <a
                       href={contact.href}
-                      className="flex items-center gap-4 p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 group"
+                      className="flex items-center gap-4 p-4 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-300 dark:border-slate-700 hover:shadow-lg transition-all duration-300 group"
                     >
                       <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                         {contact.icon}
@@ -113,7 +113,7 @@ export const ContactSection = () => {
                       </div>
                     </a>
                   ) : (
-                    <div className="flex items-center gap-4 p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700">
+                    <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-300 dark:border-slate-700">
                       <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white">
                         {contact.icon}
                       </div>
@@ -193,7 +193,7 @@ export const ContactSection = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-8 -right-8 w-48 p-4 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-xl border border-gray-200 dark:border-gray-700"
+                className="absolute -top-8 -right-8 w-48 p-4 rounded-xl bg-slate-100/90 dark:bg-slate-800/90 backdrop-blur-md shadow-xl border border-slate-300 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
@@ -211,7 +211,7 @@ export const ContactSection = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -bottom-8 -left-8 w-48 p-4 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-xl border border-gray-200 dark:border-gray-700"
+                className="absolute -bottom-8 -left-8 w-48 p-4 rounded-xl bg-slate-100/90 dark:bg-slate-800/90 backdrop-blur-md shadow-xl border border-slate-300 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
@@ -229,7 +229,7 @@ export const ContactSection = () => {
               <motion.div
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                className="absolute top-1/2 -right-12 w-40 p-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-xl border border-gray-200 dark:border-gray-700"
+                className="absolute top-1/2 -right-12 w-40 p-3 rounded-xl bg-slate-100/90 dark:bg-slate-800/90 backdrop-blur-md shadow-xl border border-slate-300 dark:border-slate-700"
               >
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">

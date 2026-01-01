@@ -1,7 +1,8 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { Section } from '@/components/Section';
-import { Card, CardGrid } from '@/components/Card';
+import { CardGrid } from '@/components/Card';
+import { TiltedCard } from '@/components/TiltedCard';
 import { FiTrendingUp, FiHeart, FiShoppingCart, FiBook, FiHome, FiCpu, FiTruck, FiBarChart, FiArrowUpRight } from 'react-icons/fi';
 
 const industries = [
@@ -76,8 +77,9 @@ export default function Industries() {
         subtitle="Delivering tailored software solutions across diverse sectors with deep domain expertise."
         primaryCta={{ text: 'Explore Solutions', href: '/services' }}
         secondaryCta={{ text: 'Contact Us', href: '/contact' }}
-        heroImage="/images/hero-industries.svg"
+        heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80"
         showHeroImage={true}
+        isRealPhoto={true}
       />
 
       {/* Hero-Down Info Section */}
@@ -115,7 +117,7 @@ export default function Industries() {
       >
         <CardGrid>
           {industries.map((industry, index) => (
-            <Card
+            <TiltedCard
               key={index}
               icon={industry.icon}
               title={industry.title}

@@ -3,6 +3,7 @@
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { Section } from '@/components/Section';
+import { SplitContentSection } from '@/components/SplitContentSection';
 import { motion } from 'framer-motion';
 
 const techCategories = [
@@ -70,8 +71,9 @@ export default function Technologies() {
       <HeroSection
         title="Technologies We Use"
         subtitle="We build web applications and apps for government and private sectors using a modern and reliable tech stack, staying at the forefront of industry innovation."
-        heroImage="/images/hero-innovation.svg"
+        heroImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80"
         showHeroImage={true}
+        isRealPhoto={true}
       />
 
       {/* Hero-Down Info Section */}
@@ -102,6 +104,16 @@ export default function Technologies() {
         />
       </HeroInfoSection>
 
+      {/* Developer Experience Section */}
+      <SplitContentSection
+        title="Building with Latest Technology"
+        description="We stay at the forefront of technology innovation, continuously updating our skillset and tooling to deliver modern, scalable solutions. Our team has deep expertise in both established technologies and emerging platforms, ensuring your project benefits from proven best practices and cutting-edge innovation."
+        image="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
+        imageAlt="Developers working on code and technical solutions"
+        imagePosition="left"
+        backgroundColor="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800"
+      />
+
       {/* Tech Categories */}
       <Section
         title="Our Tech Stack"
@@ -115,7 +127,7 @@ export default function Technologies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700"
+              className="bg-slate-50 dark:bg-slate-900 rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200 dark:border-slate-700"
             >
               <div className={`h-1 w-12 bg-gradient-to-r ${category.color} rounded-full mb-4`} />
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">

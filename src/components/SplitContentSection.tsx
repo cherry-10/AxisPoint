@@ -20,7 +20,7 @@ export const SplitContentSection = ({
   image,
   imageAlt,
   imagePosition = 'right',
-  backgroundColor = 'bg-white dark:bg-slate-950',
+  backgroundColor = 'bg-slate-50 dark:bg-slate-950',
   children,
 }: SplitContentSectionProps) => {
   const isImageRight = imagePosition === 'right';
@@ -61,13 +61,13 @@ export const SplitContentSection = ({
             className={`relative ${isImageRight ? '' : 'md:col-start-1 md:row-start-1'}`}
           >
             <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:via-purple-500/20 dark:to-cyan-500/20 z-10" />
               <Image
                 src={image}
                 alt={imageAlt}
                 fill
-                className="object-contain p-8"
+                className="object-cover w-full h-full"
                 priority={false}
+                unoptimized={image.startsWith('http')}
               />
             </div>
             

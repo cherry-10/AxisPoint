@@ -68,7 +68,7 @@ export default function Careers() {
         title="Careers at AxisPoint Software PVT LTD"
         subtitle="Grow Your Career With AxisPoint. At AxisPoint Software PVT LTD, we believe that innovation begins with people. We are committed to building a dynamic team of learners, problem-solvers, and technology enthusiasts who are passionate about creating meaningful digital solutions."
         primaryCta={{ text: 'View Opportunities', href: '#opportunities' }}
-        heroImage="/images/hero-careers.svg"
+        heroImage="/images/hero-innovation.svg"
         showHeroImage={true}
       />
 

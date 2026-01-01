@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
+import Image from 'next/image';
 
 interface CardProps {
   icon?: ReactNode;
@@ -10,6 +11,8 @@ interface CardProps {
   tag?: string;
   className?: string;
   delay?: number;
+  image?: string;
+  imageAlt?: string;
 }
 
 export const Card = ({
@@ -19,6 +22,8 @@ export const Card = ({
   tag,
   className = '',
   delay = 0,
+  image,
+  imageAlt = 'Card image',
 }: CardProps) => {
   return (
     <motion.div
@@ -35,27 +40,41 @@ export const Card = ({
         scale: 1.03,
         transition: { type: 'spring', stiffness: 220, damping: 18 },
       }}
-      className={`bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 ${className}`}
+      className={`bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 ${className}`}
     >
-      {tag && (
-        <span className="inline-block bg-primary/10 text-primary dark:bg-primary-dark/20 dark:text-primary-dark text-xs font-medium px-3 py-1 rounded-full mb-4">
-          {tag}
-        </span>
-      )}
-      
-      {icon && (
-        <div className="w-12 h-12 bg-primary/10 dark:bg-primary-dark/10 rounded-lg flex items-center justify-center text-primary dark:text-primary-dark mb-4">
-          {icon}
+      {image && (
+        <div className="relative h-48 w-full overflow-hidden">
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            className="object-cover w-full h-full"
+            unoptimized={image.startsWith('http')}
+          />
         </div>
       )}
       
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-        {title}
-      </h3>
-      
-      <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed">
-        {description}
-      </p>
+      <div className="p-6">
+        {tag && (
+          <span className="inline-block bg-primary/10 text-primary dark:bg-primary-dark/20 dark:text-primary-dark text-xs font-medium px-3 py-1 rounded-full mb-4">
+            {tag}
+          </span>
+        )}
+        
+        {icon && (
+          <div className="w-12 h-12 bg-primary/10 dark:bg-primary-dark/10 rounded-lg flex items-center justify-center text-primary dark:text-primary-dark mb-4">
+            {icon}
+          </div>
+        )}
+        
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+          {title}
+        </h3>
+        
+        <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed">
+          {description}
+        </p>
+      </div>
     </motion.div>
   );
 };

@@ -1,10 +1,10 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { SplitContentSection, ContentList } from '@/components/SplitContentSection';
 import { Section } from '@/components/Section';
+import { StatCounter } from '@/components/CountUp';
 
 
 const stats = [
@@ -23,8 +23,9 @@ export default function Home() {
         subtitle="AxisPoint Software delivers innovative, scalable, and reliable software solutions that drive business growth and digital transformation."
         primaryCta={{ text: 'Get Started', href: '/services' }}
         secondaryCta={{ text: 'Learn More', href: '/about' }}
-        heroImage="/images/hero-tech.svg"
+        heroImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80"
         showHeroImage={true}
+        isRealPhoto={true}
       />
 
       {/* Hero-Down Info Section */}
@@ -59,7 +60,7 @@ export default function Home() {
       <SplitContentSection
         title="Digital Transformation for Modern Businesses"
         description="We help organizations navigate the complexities of digital transformation with strategic planning, cutting-edge technology, and proven methodologies. Our approach ensures seamless integration of new systems while maintaining business continuity."
-        image="/images/content/digital-transformation.svg"
+        image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
         imageAlt="Digital Transformation"
         imagePosition="right"
       >
@@ -76,7 +77,7 @@ export default function Home() {
       <SplitContentSection
         title="Custom Software Development Excellence"
         description="From concept to deployment, we build scalable, secure, and high-performance software solutions tailored to your unique business requirements. Our agile development process ensures rapid delivery without compromising quality."
-        image="/images/content/software-development.svg"
+        image="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80"
         imageAlt="Software Development"
         imagePosition="left"
         backgroundColor="bg-gray-50 dark:bg-gray-900"
@@ -94,7 +95,7 @@ export default function Home() {
       <SplitContentSection
         title="Collaborative Approach to Success"
         description="Our team works as an extension of yours, bringing together diverse expertise and perspectives to solve complex challenges. We believe in transparent communication, agile methodologies, and delivering measurable results."
-        image="/images/content/team-collaboration.svg"
+        image="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=800&q=80"
         imageAlt="Team Collaboration"
         imagePosition="right"
       >
@@ -111,19 +112,12 @@ export default function Home() {
         <Section className="bg-gradient-to-r from-primary/5 to-secondary/5 dark:from-primary-dark/10 dark:to-secondary-dark/10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <motion.div
+              <StatCounter
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-primary dark:text-primary-dark mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 dark:text-gray-300">{stat.label}</div>
-              </motion.div>
+                number={stat.number}
+                label={stat.label}
+                delay={index * 0.1}
+              />
             ))}
           </div>
         </Section>

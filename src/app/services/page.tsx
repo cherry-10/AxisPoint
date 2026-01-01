@@ -2,6 +2,8 @@ import { HeroSection } from '@/components/HeroSection';
 import { HeroInfoBlock, HeroInfoSection } from '@/components/HeroInfoBlock';
 import { Section } from '@/components/Section';
 import { Card, CardGrid } from '@/components/Card';
+import { TiltedCard } from '@/components/TiltedCard';
+import { SplitContentSection } from '@/components/SplitContentSection';
 import { FiCode, FiCpu, FiCloud, FiBarChart } from 'react-icons/fi';
 
 const coreServices = [
@@ -133,8 +135,9 @@ export default function Services() {
         subtitle="Comprehensive software development and IT solutions tailored to your business needs."
         primaryCta={{ text: 'Get Started', href: '/contact' }}
         secondaryCta={{ text: 'Learn More', href: '/about' }}
-        heroImage="/images/hero-services.svg"
+        heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80"
         showHeroImage={true}
+        isRealPhoto={true}
       />
 
       {/* Hero-Down Info Section */}
@@ -165,6 +168,16 @@ export default function Services() {
         />
       </HeroInfoSection>
 
+      {/* Services Overview with Image */}
+      <SplitContentSection
+        title="Tailored Solutions for Every Challenge"
+        description="Our comprehensive service portfolio covers the full spectrum of software development and IT solutions. Whether you need custom application development, cloud infrastructure, or strategic consulting, we have the expertise and experience to deliver results that exceed expectations."
+        image="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+        imageAlt="Team professionals discussing software solutions"
+        imagePosition="right"
+        backgroundColor="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800"
+      />
+
       {/* Core Development Services */}
       <Section
         title="Core Development Services"
@@ -172,7 +185,7 @@ export default function Services() {
       >
         <CardGrid>
           {coreServices.map((service, index) => (
-            <Card
+            <TiltedCard
               key={index}
               icon={service.icon}
               title={service.title}
@@ -192,7 +205,7 @@ export default function Services() {
       >
         <CardGrid>
           {advancedServices.map((service, index) => (
-            <Card
+            <TiltedCard
               key={index}
               icon={service.icon}
               title={service.title}
@@ -231,7 +244,7 @@ export default function Services() {
       >
         <CardGrid>
           {strategicServices.map((service, index) => (
-            <Card
+            <TiltedCard
               key={index}
               icon={service.icon}
               title={service.title}
@@ -249,59 +262,18 @@ export default function Services() {
         subtitle="Specialized expertise in serving both public and private sector needs"
         className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20"
       >
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md border border-gray-100 dark:border-gray-700">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Government Sector</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Citizen-facing portals and e-governance solutions</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Compliance with government standards and regulations</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Secure data management and information systems</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Integration with existing government infrastructure</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">24/7 support and maintenance services</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md border border-gray-100 dark:border-gray-700">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Private Sector</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Enterprise resource planning (ERP) systems</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Customer relationship management (CRM) solutions</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Business intelligence and analytics platforms</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Mobile-first applications for customer engagement</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary dark:text-primary-dark mr-3 font-bold">•</span>
-                <span className="text-gray-600 dark:text-gray-300">Scalable solutions for rapid business growth</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <CardGrid>
+          <TiltedCard
+            title="Government Sector"
+            description="Citizen-facing portals and e-governance solutions. Compliance with government standards and regulations. Secure data management and information systems. Integration with existing government infrastructure. 24/7 support and maintenance services."
+            delay={0}
+          />
+          <TiltedCard
+            title="Private Sector"
+            description="Enterprise resource planning (ERP) systems. Customer relationship management (CRM) solutions. Business intelligence and analytics platforms. Mobile-first applications for customer engagement. Scalable solutions for rapid business growth."
+            delay={1}
+          />
+        </CardGrid>
       </Section>
 
       {/* Service Details Section */}

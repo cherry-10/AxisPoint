@@ -21,7 +21,7 @@ export const HeroInfoBlock = ({ icon, title, description, delay = 0 }: HeroInfoB
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
+      className="group relative bg-slate-50 dark:bg-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-cyan-500/5 dark:from-blue-500/10 dark:via-purple-500/10 dark:to-cyan-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
