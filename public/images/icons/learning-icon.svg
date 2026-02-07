@@ -1,0 +1,37 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="learning-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Open book -->
+  <path d="M 40 25 L 20 30 L 20 60 L 40 55 Z" 
+        fill="url(#learning-grad)" opacity="0.3" stroke="url(#learning-grad)" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 40 25 L 60 30 L 60 60 L 40 55 Z" 
+        fill="url(#learning-grad)" opacity="0.3" stroke="url(#learning-grad)" stroke-width="2" stroke-linejoin="round"/>
+  
+  <!-- Book spine -->
+  <line x1="40" y1="25" x2="40" y2="55" stroke="url(#learning-grad)" stroke-width="2.5"/>
+  
+  <!-- Text lines left page -->
+  <line x1="25" y1="38" x2="35" y2="37" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="25" y1="43" x2="35" y2="42" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="25" y1="48" x2="35" y2="47" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Text lines right page -->
+  <line x1="45" y1="37" x2="55" y2="38" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="45" y1="42" x2="55" y2="43" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="45" y1="47" x2="55" y2="48" stroke="url(#learning-grad)" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Light bulb above -->
+  <circle cx="40" cy="15" r="5" fill="url(#learning-grad)" opacity="0.3"/>
+  <circle cx="40" cy="15" r="5" fill="none" stroke="url(#learning-grad)" stroke-width="2"/>
+  <line x1="38" y1="13" x2="42" y2="17" stroke="url(#learning-grad)" stroke-width="1.5"/>
+  
+  <!-- Knowledge dots -->
+  <circle cx="25" cy="68" r="2" fill="#3B82F6" opacity="0.6"/>
+  <circle cx="40" cy="68" r="2" fill="#06B6D4" opacity="0.6"/>
+  <circle cx="55" cy="68" r="2" fill="#3B82F6" opacity="0.6"/>
+</svg>

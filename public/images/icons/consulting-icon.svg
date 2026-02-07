@@ -1,0 +1,37 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="consult-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Lightbulb with brain -->
+  <circle cx="40" cy="35" r="16" fill="url(#consult-grad)" opacity="0.2"/>
+  <circle cx="40" cy="35" r="16" fill="none" stroke="url(#consult-grad)" stroke-width="2.5"/>
+  
+  <!-- Brain pattern inside -->
+  <path d="M 32 30 Q 36 28 40 30 Q 44 28 48 30" stroke="url(#consult-grad)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 32 35 Q 36 33 40 35 Q 44 33 48 35" stroke="url(#consult-grad)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 32 40 Q 36 38 40 40 Q 44 38 48 40" stroke="url(#consult-grad)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Base -->
+  <rect x="35" y="51" width="10" height="3" rx="1" fill="url(#consult-grad)" opacity="0.7"/>
+  <rect x="36" y="54" width="8" height="2" rx="1" fill="url(#consult-grad)" opacity="0.5"/>
+  
+  <!-- Connection nodes -->
+  <circle cx="25" cy="25" r="4" fill="url(#consult-grad)" opacity="0.6"/>
+  <circle cx="55" cy="25" r="4" fill="url(#consult-grad)" opacity="0.6"/>
+  <circle cx="25" cy="45" r="4" fill="url(#consult-grad)" opacity="0.6"/>
+  <circle cx="55" cy="45" r="4" fill="url(#consult-grad)" opacity="0.6"/>
+  
+  <!-- Connection lines -->
+  <line x1="25" y1="25" x2="32" y2="30" stroke="url(#consult-grad)" stroke-width="1.5" opacity="0.4" stroke-dasharray="2,2"/>
+  <line x1="55" y1="25" x2="48" y2="30" stroke="url(#consult-grad)" stroke-width="1.5" opacity="0.4" stroke-dasharray="2,2"/>
+  <line x1="25" y1="45" x2="32" y2="40" stroke="url(#consult-grad)" stroke-width="1.5" opacity="0.4" stroke-dasharray="2,2"/>
+  <line x1="55" y1="45" x2="48" y2="40" stroke="url(#consult-grad)" stroke-width="1.5" opacity="0.4" stroke-dasharray="2,2"/>
+  
+  <!-- Bottom chart -->
+  <path d="M 25 65 L 30 60 L 35 62 L 40 58 L 45 62 L 50 60 L 55 65" 
+        stroke="url(#consult-grad)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

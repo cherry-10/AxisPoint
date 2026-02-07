@@ -1,0 +1,38 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="innovation-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Light bulb base -->
+  <circle cx="40" cy="35" r="18" fill="url(#innovation-grad)" opacity="0.2"/>
+  
+  <!-- Bulb outline -->
+  <path d="M 40 15 Q 50 15 55 25 Q 58 32 55 38 L 50 45 L 30 45 L 25 38 Q 22 32 25 25 Q 30 15 40 15 Z" 
+        fill="none" stroke="url(#innovation-grad)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Filament -->
+  <path d="M 35 28 Q 37 32 40 30 Q 43 32 45 28" 
+        stroke="url(#innovation-grad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="40" y1="30" x2="40" y2="38" stroke="url(#innovation-grad)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Base -->
+  <rect x="32" y="45" width="16" height="4" rx="1" fill="url(#innovation-grad)" opacity="0.8"/>
+  <rect x="33" y="49" width="14" height="3" rx="1" fill="url(#innovation-grad)" opacity="0.6"/>
+  <rect x="34" y="52" width="12" height="3" rx="1" fill="url(#innovation-grad)" opacity="0.4"/>
+  
+  <!-- Spark lines -->
+  <line x1="25" y1="20" x2="20" y2="15" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="55" y1="20" x2="60" y2="15" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="20" y1="35" x2="15" y2="35" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="60" y1="35" x2="65" y2="35" stroke="#EC4899" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Bottom circuit pattern -->
+  <circle cx="25" cy="65" r="3" fill="#3B82F6" opacity="0.6"/>
+  <circle cx="40" cy="65" r="3" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="55" cy="65" r="3" fill="#06B6D4" opacity="0.6"/>
+  <line x1="25" y1="65" x2="40" y2="65" stroke="#3B82F6" stroke-width="1.5" opacity="0.4"/>
+  <line x1="40" y1="65" x2="55" y2="65" stroke="#8B5CF6" stroke-width="1.5" opacity="0.4"/>
+</svg>

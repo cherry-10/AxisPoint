@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Star Icon -->
+  <g id="star">
+    <!-- Left Blue Triangle -->
+    <polygon points="512,240 380,380 380,620" fill="#003d82"/>
+    
+    <!-- Right Gray Triangle -->
+    <polygon points="512,240 644,380 644,620" fill="#999999"/>
+    
+    <!-- Center Diamond -->
+    <polygon points="512,360 560,480 512,600 464,480" fill="#0066cc"/>
+    
+    <!-- Left Green Lines -->
+    <line x1="320" y1="280" x2="380" y2="340" stroke="#a4c639" stroke-width="12" stroke-linecap="round"/>
+    <line x1="300" y1="260" x2="360" y2="320" stroke="#a4c639" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+    <line x1="280" y1="240" x2="340" y2="300" stroke="#a4c639" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Right Gray Lines -->
+    <line x1="704" y1="280" x2="644" y2="340" stroke="#cccccc" stroke-width="12" stroke-linecap="round"/>
+    <line x1="724" y1="260" x2="664" y2="320" stroke="#cccccc" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+    <line x1="744" y1="240" x2="684" y2="300" stroke="#cccccc" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  
+  <!-- Text: AxisPoint -->
+  <text x="512" y="820" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#003d82">
+    AxisPoint
+  </text>
+  
+  <!-- Text: SOFTWARE PVT. LTD. -->
+  <text x="512" y="900" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#333333">
+    SOFTWARE PVT. LTD.
+  </text>
+  
+  <!-- Tagline -->
+  <text x="512" y="960" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#666666">
+    SOFTWARE DEVELOPMENT • IT SOLUTIONS • INNOVATION
+  </text>
+</svg>

@@ -1,0 +1,53 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="500" fill="white"/>
+  
+  <!-- Star shape with gradient -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003d82;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#999999;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cccccc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Star center point -->
+  <circle cx="250" cy="200" r="8" fill="#999999"/>
+  
+  <!-- Left blue triangle -->
+  <polygon points="250,200 180,150 200,280" fill="url(#blueGradient)"/>
+  
+  <!-- Right gray triangle -->
+  <polygon points="250,200 320,150 300,280" fill="url(#grayGradient)"/>
+  
+  <!-- Top triangle -->
+  <polygon points="250,200 250,80 290,150" fill="url(#blueGradient)"/>
+  
+  <!-- Left lines (green/yellow accent) -->
+  <line x1="140" y1="120" x2="160" y2="140" stroke="#a4c639" stroke-width="3" stroke-linecap="round"/>
+  <line x1="130" y1="110" x2="150" y2="130" stroke="#a4c639" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="100" x2="140" y2="120" stroke="#a4c639" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Right lines (gray accent) -->
+  <line x1="360" y1="120" x2="340" y2="140" stroke="#cccccc" stroke-width="3" stroke-linecap="round"/>
+  <line x1="370" y1="110" x2="350" y2="130" stroke="#cccccc" stroke-width="3" stroke-linecap="round"/>
+  <line x1="380" y1="100" x2="360" y2="120" stroke="#cccccc" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Text: AxisPoint -->
+  <text x="250" y="380" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#003d82">
+    AxisPoint
+  </text>
+  
+  <!-- Text: SOFTWARE PVT. LTD. -->
+  <text x="250" y="420" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#333333">
+    SOFTWARE PVT. LTD.
+  </text>
+  
+  <!-- Tagline -->
+  <text x="250" y="450" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">
+    SOFTWARE DEVELOPMENT • IT SOLUTIONS • INNOVATION
+  </text>
+</svg>

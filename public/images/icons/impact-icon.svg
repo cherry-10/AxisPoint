@@ -1,0 +1,31 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="impact-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Target circles -->
+  <circle cx="40" cy="40" r="25" fill="url(#impact-grad)" opacity="0.1"/>
+  <circle cx="40" cy="40" r="25" fill="none" stroke="url(#impact-grad)" stroke-width="2" opacity="0.3"/>
+  <circle cx="40" cy="40" r="18" fill="none" stroke="url(#impact-grad)" stroke-width="2" opacity="0.5"/>
+  <circle cx="40" cy="40" r="11" fill="none" stroke="url(#impact-grad)" stroke-width="2" opacity="0.7"/>
+  <circle cx="40" cy="40" r="5" fill="url(#impact-grad)"/>
+  
+  <!-- Impact arrows -->
+  <path d="M 40 10 L 40 25 M 37 22 L 40 19 L 43 22" 
+        stroke="url(#impact-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 70 40 L 55 40 M 58 37 L 61 40 L 58 43" 
+        stroke="url(#impact-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 40 70 L 40 55 M 37 58 L 40 61 L 43 58" 
+        stroke="url(#impact-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 10 40 L 25 40 M 22 37 L 19 40 L 22 43" 
+        stroke="url(#impact-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Corner sparkles -->
+  <circle cx="18" cy="18" r="2" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="62" cy="18" r="2" fill="#EC4899" opacity="0.6"/>
+  <circle cx="18" cy="62" r="2" fill="#EC4899" opacity="0.6"/>
+  <circle cx="62" cy="62" r="2" fill="#8B5CF6" opacity="0.6"/>
+</svg>
